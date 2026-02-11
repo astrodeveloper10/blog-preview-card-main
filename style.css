@@ -27,9 +27,11 @@ ol {
     --ff: "Figtree", sans-serif;
 
     /*  Font sizes */
-    --fs-24: calc(24rem / 16);
-    --fs-16: calc(16rem / 16);
+    --fs-12: calc(12rem / 16);
     --fs-14: calc(14rem / 16);
+    --fs-16: calc(16rem / 16);
+    --fs-20: calc(20rem / 16);
+    --fs-24: calc(24rem / 16);
 
     /* Font weights */
     --fw-medium: 500;
@@ -83,12 +85,16 @@ body {
     /* Font properties */
     font-family: var(--ff);
     font-weight: var(--fw-medium);
-    font-size: var(--fs-14);
+    font-size: var(--fs-12);
 
     /* Centering trick */
     display: grid;
     place-content: center;
     height: 100%;
+
+    @media (min-width: 720px) {
+        font-size: var(--fs-14);
+    }
 }
 
 .card {
@@ -127,8 +133,12 @@ body {
 }
 
 .card__title {
-    font-size: var(--fs-24);
+    font-size: var(--fs-20);
     font-weight: var(--fw-extra-bold);
+
+    @media (min-width: 720px) {
+        font-size: var(--fs-24);
+    }
 }
 
 .card__link:hover,
@@ -138,10 +148,14 @@ body {
 
 .card__description {
     color: var(--color-gray-500);
-    font-size: var(--fs-16);
+    font-size: var(--fs-14);
+
+    @media (min-width: 720px) {
+        font-size: var(--fs-16);
+    }
 }
 
-.card__author {
+.card__footer {
     display: flex;
     align-items: center;
     gap: var(--space-12);
@@ -154,4 +168,5 @@ body {
 
 .card__author-name {
     color: var(--color-gray-950);
+    font-size: var(--fs-14);
 }
