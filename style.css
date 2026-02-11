@@ -37,10 +37,23 @@ ol {
 }
 
 :root {
+    /* Fonts */
+    --ff: "Figtree", sans-serif;
+    --fs-24: 24px;
+    --fs-16: 16px;
+    --fs-14: 14px;
+
+    /*  Colors */
     --color-primary: hsl(47deg 88% 63%);
     --color-gray-500: hsl(0deg 0% 42%);
     --color-gray-950: hsl(0deg 0% 7%);
     --color-white: hsl(0deg 0% 100%);
+
+    /* Spacing (Padding, gap, margins) */
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-24: 24px;
 }
 
 /* figtree-500 - latin */
@@ -60,8 +73,56 @@ ol {
     src: url("./assets/fonts/figtree-v9-latin-800.woff2") format("woff2");
 }
 
+html {
+    height: 100%;
+}
+
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    font-family: "Figtree", sans-serif;
+    font-family: var(--ff);
+    background-color: var(--color-primary);
+    padding: var(--space-24);
+    letter-spacing: 0;
+    display: grid;
+    place-content: center;
+    height: 100%;
+}
+
+main {
+    border: 1px solid black;
+    max-width: 384px;
+    padding: var(--space-24);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+}
+
+.content__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+}
+
+.card__illustration {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.avatar__wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--space-12);
+}
+
+.avatar__photo {
+    width: 32px;
+    height: 32px;
+}
+
+.avatar__name {
+    color: var(--color-gray-950);
 }
