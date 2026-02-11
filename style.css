@@ -41,9 +41,9 @@ ol {
     --ff: "Figtree", sans-serif;
 
     /*  Font sizes */
-    --fs-24: 24px;
-    --fs-16: 16px;
-    --fs-14: 14px;
+    --fs-24: calc(24rem / 16);
+    --fs-16: calc(16rem / 16);
+    --fs-14: calc(14rem / 16);
 
     /* Font weights */
     --fw-medium: 500;
@@ -93,7 +93,6 @@ body {
 
     /* Spacing properties */
     padding: var(--space-24);
-    letter-spacing: 0;
 
     /* Font properties */
     font-family: var(--ff);
