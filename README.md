@@ -79,8 +79,8 @@ Used `calc()` to calculate the font size in rem
 
 ### Useful resources
 
-- [Example resource 1](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/) - This helped me for calculating the font sizes using `calc()`. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.joshwcomeau.com/css/custom-css-reset/) - This is an amazing article for learning about the CSS reset rules and what each rule does.
+- [Pixels and accessibility](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/) - This helped me for calculating the font sizes using `calc()`. I really liked this pattern and will use it going forward.
+- [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) - This is an amazing article for learning about the CSS reset rules and what each rule does.
 
 ### AI Collaboration
 
