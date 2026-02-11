@@ -37,11 +37,17 @@ ol {
 }
 
 :root {
-    /* Fonts */
+    /* Font Face */
     --ff: "Figtree", sans-serif;
+
+    /*  Font sizes */
     --fs-24: 24px;
     --fs-16: 16px;
     --fs-14: 14px;
+
+    /* Font weights */
+    --fw-medium: 500;
+    --fw-extra-bold: 900;
 
     /*  Colors */
     --color-primary: hsl(47deg 88% 63%);
@@ -78,38 +84,71 @@ html {
 }
 
 body {
+    /*  Reset properties */
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    font-family: var(--ff);
+
+    /*  Color properties */
     background-color: var(--color-primary);
+
+    /* Spacing properties */
     padding: var(--space-24);
     letter-spacing: 0;
+
+    /* Font properties */
+    font-family: var(--ff);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-14);
+
+    /* Centering trick */
     display: grid;
     place-content: center;
     height: 100%;
 }
 
 main {
-    border: 1px solid black;
-    max-width: 384px;
-    padding: var(--space-24);
-    background-color: var(--color-white);
-    border-radius: 10px;
+    /*  Layout properties */
     display: flex;
     flex-direction: column;
     gap: var(--space-24);
-}
+    max-width: 384px;
 
-.content__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-12);
+    padding: var(--space-24);
+    border: 1px solid var(--color-gray-950);
+    border-radius: 20px;
+    box-shadow: 8px 8px;
+    background-color: var(--color-white);
 }
 
 .card__illustration {
-    border-radius: 10px;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
+}
+
+.article__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    color: var(--color-gray-950);
+}
+
+.article__label {
+    width: fit-content;
+    padding: var(--space-4) var(--space-12);
+    border-radius: var(--space-4);
+    font-weight: var(--fw-extra-bold);
+    background-color: var(--color-primary);
+}
+
+.article__title {
+    font-size: var(--fs-24);
+    font-weight: var(--fw-extra-bold);
+}
+
+.article__content {
+    color: var(--color-gray-500);
+    font-size: var(--fs-16);
 }
 
 .avatar__wrapper {
