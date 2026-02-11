@@ -17,35 +17,37 @@
     </head>
     <body>
         <main>
-            <img
-                src="./assets/images/illustration-article.svg"
-                alt="Illustration"
-                width="336"
-                height="201"
-                class="card__illustration"
-            />
-            <article class="article__wrapper">
-                <strong class="article__label">Learning</strong>
-                <p class="article__published--date">Published 21 Dec 2023</p>
-                <h2 class="article__title">
-                    <a href="#" class="article__title--link"
-                        >HTML & CSS foundations
-                    </a>
-                </h2>
-                <p class="article__content">
-                    These languages are the backbone of every website, defining
-                    structure, content, and presentation.
-                </p>
-            </article>
-            <div class="avatar__wrapper">
+            <article class="card">
                 <img
-                    src="./assets/images/image-avatar.webp"
-                    width="64"
-                    height="65"
-                    class="avatar__photo"
+                    src="./assets/images/illustration-article.svg"
+                    alt="Illustration"
+                    width="336"
+                    height="201"
+                    class="card__illustration"
                 />
-                <strong class="avatar__name">Greg Hooper</strong>
-            </div>
+                <div class="card__body">
+                    <strong class="card__badge">Learning</strong>
+                    <p class="card__date">Published 21 Dec 2023</p>
+                    <h2 class="card__title">
+                        <a href="#" class="card__link"
+                            >HTML & CSS foundations
+                        </a>
+                    </h2>
+                    <p class="card__description">
+                        These languages are the backbone of every website,
+                        defining structure, content, and presentation.
+                    </p>
+                </div>
+                <section class="card__author">
+                    <img
+                        src="./assets/images/image-avatar.webp"
+                        width="64"
+                        height="65"
+                        class="card__avatar"
+                    />
+                    <strong class="card__author-name">Greg Hooper</strong>
+                </section>
+            </article>
         </main>
     </body>
 </html>

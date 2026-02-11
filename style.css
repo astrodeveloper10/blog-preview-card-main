@@ -7,23 +7,9 @@
     padding: 0;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
+img {
     display: block;
     max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-    color: inherit;
-    background: none;
-    border-color: transparent;
 }
 
 a {
@@ -105,7 +91,7 @@ body {
     height: 100%;
 }
 
-main {
+.card {
     /*  Layout properties */
     display: flex;
     flex-direction: column;
@@ -125,14 +111,14 @@ main {
     border-radius: 10px;
 }
 
-.article__wrapper {
+.card__body {
     display: flex;
     flex-direction: column;
     gap: var(--space-12);
     color: var(--color-gray-950);
 }
 
-.article__label {
+.card__badge {
     width: fit-content;
     padding: var(--space-4) var(--space-12);
     border-radius: var(--space-4);
@@ -140,32 +126,32 @@ main {
     background-color: var(--color-primary);
 }
 
-.article__title {
+.card__title {
     font-size: var(--fs-24);
     font-weight: var(--fw-extra-bold);
 }
 
-.article__title--link:hover,
-.article__title--link:active {
+.card__link:hover,
+.card__link:active {
     color: var(--color-primary);
 }
 
-.article__content {
+.card__description {
     color: var(--color-gray-500);
     font-size: var(--fs-16);
 }
 
-.avatar__wrapper {
+.card__author {
     display: flex;
     align-items: center;
     gap: var(--space-12);
 }
 
-.avatar__photo {
+.card__avatar {
     width: 32px;
     height: 32px;
 }
 
-.avatar__name {
+.card__author-name {
     color: var(--color-gray-950);
 }
