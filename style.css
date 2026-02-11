@@ -146,6 +146,11 @@ main {
     font-weight: var(--fw-extra-bold);
 }
 
+.article__title--link:hover,
+.article__title--link:active {
+    color: var(--color-primary);
+}
+
 .article__content {
     color: var(--color-gray-500);
     font-size: var(--fs-16);
